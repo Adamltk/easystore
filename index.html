@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <!-- Navbar Component -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top blue-bg" aria-label="Offcanvas navbar large">
+      <div class="container-fluid">
+        <a class="navbar-brand pl-md-5" href="#"><img class="img-responsive" id="navbar-logo" src="./img/horizontal/easystore-logo-horizontal-white.png" alt="EasyStore logo" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item dropdown  pe-2">
+                <a class="nav-link dropdown-toggle active fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item pe-2">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown pe-2">
+                <a class="nav-link dropdown-toggle active fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solutions
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown pe-2">
+                <a class="nav-link dropdown-toggle active fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item pe-2">
+                <a class="nav-link active fw-bold" href="#">Our Customers</a>
+              </li>
+              <li class="nav-item pe-2">
+                <a class="nav-link active fw-bold" href="#">Log in</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-outline-light fw-bold">Get Started</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+  <!-- Container (Feature) -->
+  <div class="container-fluid" id="feature-div">
+    <div class="row g-0">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-5 col-sm-10" id="feature-left">
+        <div class="row ms-5">
+          <div class="col-xl-2 col-3 text-center">
+            <img class="img-responsive " id="shopping-img" src="img/shopping app.png">
+          </div>
+          <div class="col-xl-10 col-9">
+            <div class="badge bg-white text-dark text-center text-wrap py-3" id="feature-badge">
+              Shopping App
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 ms-5">
+          <h1 class="fw-bolder text-white text-break" id="feature-h1">
+            Convert your store 
+            <br class="d-none d-md-block">
+            into a mobile app
+          </h1>
+        </div>
+        <div class="row mt-3 ms-5">
+          <h3 class="text-white-50 text-break" id="feature-h3">
+            Shopping App - an app drives more conversions 
+            <br class="d-none d-md-block ">
+            and repeat purchases for your business
+          </h1>
+        </div>
+          <button type="button" class="btn text-white fw-bold py-3 px-3 mt-3 ms-5" id="feature-button" style="background-color:#FF5588;">Explore Shopping App</button>
+      </div>
+
+      <div class="col-md-6 col-sm-10">
+        <img class="img-responsive" id="feature-img"  src="img/Artboard 8.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (App Benefit)-->
+  <div class="container mb-5" >
+    <div class="row text-center app-benefit">
+        <h1 class="fw-bolder text-black">
+          Elevate Your Business to the 
+          <br class="d-none d-md-block">
+          <span class="space-inc">Next Level With Mobile App</span> 
+        </h1>
+    </div>
+    <div class="row justify-content-around app-benefit mt-5">
+      <div class="col-sm-10 col-md-4  text-center">
+        <img class="img-responsive " src="img/Artboard 8 copy.png">
+        <h2>Optimized sales for shopping experience</h2>
+        <p>
+          Create a direct mobile channel to provide
+          <br class="d-none d-xl-block">
+          shoppers with quick access to general info,
+          <br class="d-none d-xl-block">
+          shopping catalogue and manage loyalty
+          <br class="d-none d-xl-block">
+          program right at their fingertips
+        </p>
+      </div>
+      <div class="col-sm-10 col-md-4 text-center">
+        <img class="img-responsive" src="img/Artboard 8 copy 2.png">
+        <h2>Outplay your competitor</h2>
+        <p>
+          Having a mobile app for a small business is
+          <br class="d-none d-xl-block">
+          becoming less common these days, and
+          <br class="d-none d-xl-block">
+          this is where you can gain an advantage
+          <br class="d-none d-xl-block">
+          over your competition.
+        </p>
+      </div>
+      <div class="col-sm-10 col-md-4 text-center">
+        <img class="img-responsive" src="img/Artboard 8 copy 3.png">
+        <h2>Increase engagement</h2>
+        <p>
+          Simply accessible and get even closer to a
+          <br class="d-none d-xl-block">
+          direct interaction and stay connected to
+          <br class="d-none d-xl-block">
+          your customers wherever they go.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Shopping Steps) -->
+  <div class="container-fluid pt-5 pb-5 bg-light">  
+
+    <div class="row text-center mt-2 app-benefit">
+      <br>
+      <h1 class="fw-bolder text-black">
+        How Customers Buy From You on Shopping App
+      </h1>
+    </div>
+    <br>
+    <br>
+    <div class="row justify-content-md-center shopping-steps">
+      <div class="col-sm-10 col-md-3 text-center">
+        <img class="img-responsive" src="img/Artboard 8 copy 4.png">
+        <h3 class="fw-bold">1. Search your business by entering store URL or scan QR code</h3>
+      </div>      
+      <div class="col-md-1 d-none d-md-block my-auto ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#2f65ce" class="bi bi-chevron-right img-responsive" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+      <div class="col-sm-10 col-md-3 text-center">
+        <img class="img-responsive" src="img/Artboard 8 copy 5.png">
+        <h3 class="fw-bold">2. Browse your store</h3>
+      </div> 
+      <div class="col-md-1 d-none d-md-block my-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#2f65ce" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+      <div class="col-sm-10 col-md-3 text-center">
+        <img class="img-responsive" src="img/Artboard 8 copy 6.png">
+        <h3 class="fw-bold">3. Add products to bag</h3>
+      </div> 
+    </div>
+
+    <div class="row justify-content-md-center shopping-steps">
+      <div class="col-sm-10 col-md-3 text-center">
+        <img class="img-responsive" src="img/Artboard 8 copy 7.png">
+        <h3 class="fw-bold">4. Login account to checkout</h3>
+      </div> 
+      <div class="col-md-1 d-none d-md-block my-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="#2f65ce" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </div>
+      <div class="col-sm-10 col-md-3 text-center">
+        <img class="img-responsive" src="img/Artboard 8 copy 8.png">
+        <h3 class="fw-bold">5. Get notified of orders at any time</h3>
+      </div> 
+
+    </div>
+  </div>
+
+
+  <!--(Testimonial) -->
+  <div class="container-fluid blue-bg">
+    <div class="container text-center pb-5">
+      <br>
+      <div class="row text-center mt-2">
+        <h1 class="fw-bolder text-white" id="testimonial-title">
+          What they think about EasyStore
+        </h1>
+      </div>
+      <br>
+      <br>
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-md-4">
+                <div class="card" >
+                  <div class="image-wrapper mt-4">
+                    <img src="img/cocoonya.jpg" class="card-image" alt="...">
+                  </div>
+                  <div class="card-body mt-2">
+                    <p class="text-secondary ">
+                      "It helps our customer to place order
+                      <br class="d-none d-lg-block">
+                      easily and for us to manage our
+                      <br class="d-none d-lg-block">
+                      store peacefully. No hassle, it's <span class="color-pink">time  
+                      <br class="d-none d-lg-block">
+                      efficient</span> too! With just a few clicks
+                      <br class="d-none d-lg-block">
+                      you can twirl your business 
+                      <br class="d-none d-lg-block">
+                      smoothly."
+                    </p>
+                    <div class="image-wrapper mt-5">
+                      <img class="profile-pic" src="img/cocoonya-profile.jpg">
+                    </div>
+                    <p>
+                      <span class="fw-bold">Sonya, Founder of COCO ONYA</span>
+                      <br>
+                      www.thecocoonya.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="image-wrapper mt-4">
+                    <img src="img/bengbeng.png" class="card-image" alt="...">
+                  </div>
+                  <div class="card-body mt-2">
+                    <p class="text-secondary">
+                      <span class="color-pink">"Simple, user-friendly interface</span>. 
+                      <br class="d-none d-lg-block">
+                      Recommend for beginners. The
+                      <br class="d-none d-lg-block">
+                      best Malaysian alternative of 
+                      <br class="d-none d-lg-block">
+                      Shopify. Able to build a real 
+                      <br class="d-none d-lg-block">
+                      business."
+                    </p>
+                    <div class="image-wrapper mt-5">
+                      <img class="profile-pic" src="img/bengbeng-profile.jpg">
+                    </div>
+                    <p>
+                      <span class="fw-bold">Jun Qi, Co-founder of BengBeng Sourdough</span>
+                      <br>
+                      www.bengbengsourdough.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="image-wrapper mt-4">
+                    <img src="img/hermanas.jpg" class="card-image" alt="...">
+                  </div>
+                  <div class="card-body mt-2 text-center">
+                    <p class="text-secondary">
+                      "When we started HERMANAS, we
+                      <br class="d-none d-lg-block">
+                      use Whatsapp and Instagram. It's 
+                      <br class="d-none d-lg-block">
+                      hard to keep track thousand of 
+                      <br class="d-none d-lg-block">
+                      messages. <span class="color-pink">EasyStore cut us a
+                      <br class="d-none d-lg-block">
+                      significant amount of time and easy 
+                      <br class="d-none d-lg-block">
+                      to manage</span>."
+                    </p>
+                    <div class="image-wrapper mt-5">
+                      <img class="profile-pic" src="img/hermanas-profile.jpg">
+                    </div>
+                    <p>
+                      <span class="fw-bold">Jue, Founder of HERMANAS</span>
+                      <br>
+                      www.hermanas.my
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>              
+          </div>
+          <a class="carousel-control-prev bg-transparent w-auto" href="#recipeCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid pt-5 pb-5 bg-light text-center">  
+    <div class="row app-benefit">
+      <br>
+      <h1 class="fw-bolder text-black ">
+        Start selling online for free
+      </h1>
+    </div>
+    <br>
+    <a href="#" class="btn btn-primary fw-bold fs-6 px-4 py-3">Get Started</a>
+    </div>
+  </div>
+  
+  <footer class="blue-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-lg-4">
+          <h5>Sales Channel</h5>
+          <ul class="d-flex flex-column flex-wrap">
+            <li>
+              <a href="#">Online Store</a>
+            </li>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Facebook Live</a>
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <a href="#">Whatsapp</a>
+            </li>
+            <li>
+              <a href="#">Telegram</a>
+            </li>
+            <li>
+              <a href="#">Wechat</a>
+            </li>
+            <li>
+              <a href="#">Shopee</a>
+            </li>
+            <li>
+              <a href="#">Lazada</a>
+            </li>
+            <li>
+              <a href="#">Google Shopping</a>
+            </li>
+            <li>
+              <a href="#">Point of Sales</a>
+            </li>
+            <li>
+              <a href="#">Referral Marketing</a>
+            </li>
+            <li>
+              <a href="#">B2B Wholesale Portal</a>
+            </li>
+            <li>
+              <a href="#">EasyStore Mobile App</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h5>Products</h5>
+          <ul class="d-flex flex-column flex-wrap">
+            <li>
+              <a href="#">Plans & Pricing</a>
+            </li>
+            <li>
+              <a href="#">Sales Channels</a>
+            </li>
+            <li>
+              <a href="#">Marketing</a>
+            </li>
+            <li>
+              <a href="#">Online Store</a>
+            </li>
+            <li>
+              <a href="#">Order Processing</a>
+            </li>
+            <li>
+              <a href="#">Product Management</a>
+            </li>
+            <li>
+              <a href="#">Customer Relations</a>
+            </li>
+            <li>
+              <a href="#">Business Analytics</a>
+            </li>
+            <li>
+              <a href="#">App Integration</a>
+            </li>
+            <li>
+              <a href="#">Payment Integration</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Resources</h5>
+          <ul class="d-flex flex-column flex-wrap">
+            <li>
+              <a href="#">EasyStore Experts</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Brand Guidelines</a>
+            </li>
+            <li>
+              <a href="#">Help Center</a>
+            </li>
+            <li>
+              <a href="#">Server Status</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>EasyStore</h5>
+          <ul class="d-flex flex-column flex-wrap">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Our Customers</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Partner Program</a>
+            </li>
+            <li>
+              <a href="#">Affiliate Program</a>
+            </li>
+            <li>
+              <a href="#">App Developers</a>
+            </li>
+            <li>
+              <a href="#">Theme Designers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+
+
+</html>
