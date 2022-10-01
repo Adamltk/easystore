@@ -1,6 +1,20 @@
+.blue-bg{
+  background-color: #1D4AA6;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*----------- Navbar -------------------------------------------------------------------------------------*/
 #navbar-logo{
   max-width: 150px;
 }
+
+/*----------- //Navbar ------------------------------------------------------------------------------------*/
+
+/*----------- Feature Section -----------------------------------------------------------------------------*/
 #feature-div{
   background: linear-gradient(#1D4AA6 93%, white 93%);
   padding-top: 80px;
@@ -27,16 +41,63 @@
 #feature-button{
   font-size: 5vw;
 }
+ /* Medium devices (tablets, 768px and up) ***/
+@media (min-width: 768px) {
+  #feature-div{
+    background: linear-gradient(#1D4AA6 89%, white 89%);
+    padding-top: 50px;
+  }
 
-.blue-bg{
-  background-color: #1D4AA6;
+  #shopping-img{
+    width: 7vw;
+  }
+  
+  #feature-img{
+    width: 50vw;
+  }
+
+  #feature-h1{
+    font-size: 3.5vw;
+  }
+  #feature-h3{
+    font-size: 1.5vw;
+  }
+  #feature-badge{
+    font-size: 2vw;
+  }
+  #feature-button{
+    font-size: 1.5vw;
+  }
+
+}
+ /* Large devices (desktops, 992px and up) ****/
+@media (min-width: 992px) {
+  
+  #feature-div{
+    padding-top: 80px;
+  }
+
+  #shopping-img{
+    width: 6vw;
+  }
 }
 
-body{
-  font-family: Arial, Helvetica, sans-serif;
+/* Extra large devices (large desktops, 1200px and up) **/
+@media (min-width: 1200px) {
+  
+  #feature-div{
+    background: linear-gradient(#1D4AA6 89%, white 89%);
+    padding-top: 90px;
+  }
+
+  #shopping-img{
+    width: 4vw;
+  }
 }
+/*----------- //Feature Section  -----------------------------------------------------------------------------*/
 
 
+/*----------- App Benefit Section  -----------------------------------------------------------------------------*/
 .app-benefit h1{
   font-size: 8vw;
   opacity: 80%;
@@ -60,7 +121,69 @@ body{
   opacity: 70%;
 }
 
+ /* Medium devices (tablets, 768px and up) ****/
+@media (min-width: 768px) {
 
+  .app-benefit h1{
+    font-size: 4vw;
+  }
+  .app-benefit img{
+    width: 32vw;
+  }
+  
+  .app-benefit h2{
+
+    font-size: 2vw;
+  }
+  .app-benefit p{
+    font-size: 1.6vw;
+  }
+
+  .space-inc{
+    letter-spacing: 2px;
+  }
+
+}
+
+
+/* Large devices (desktops, 992px and up) ****/
+@media (min-width: 992px) {
+
+  .app-benefit h1{
+    font-size: 3.5vw;
+  }
+  .app-benefit img{
+    width: 24vw;
+  }
+  
+  .app-benefit h2{
+
+    font-size: 1.8vw;
+  }
+  .app-benefit p{
+    font-size: 1.4vw;
+  }
+
+}
+
+ /* Extra large devices (large desktops, 1200px and up) ****/
+ @media (min-width: 1200px) {
+
+  .app-benefit h2{
+    font-size: 1.2vw;
+  }
+  .app-benefit p{
+    font-size: 0.8vw;
+  }
+  .app-benefit img{
+    width: 19vw;
+  }
+
+ }
+
+/*----------- //App Benefit Section  -----------------------------------------------------------------------------*/
+
+/*----------- Shopping Steps Section  -----------------------------------------------------------------------------*/
 .shopping-steps img{
   width:70vw;
 }
@@ -75,7 +198,45 @@ body{
   max-width: 100%;
 }
 
+/* Medium devices (tablets, 768px and up) ****/
+@media (min-width: 768px) {
 
+  .shopping-steps img{
+    width:26vw;
+  }
+
+  .shopping-steps h3{
+    font-size: 2vw;
+  }
+
+}
+
+
+/* Large devices (desktops, 992px and up) ****/
+@media (min-width: 992px) {
+
+  .shopping-steps img{
+    width:24vw;
+  }
+
+  .shopping-steps h3{
+    font-size: 1.6vw;
+  }
+
+}
+
+ /* Extra large devices (large desktops, 1200px and up) ****/
+ @media (min-width: 1200px) {
+
+  .shopping-steps img{
+    width:26vw;
+  }
+
+ }
+
+/*----------- //Shopping Steps Section  -----------------------------------------------------------------------------*/
+
+/*----------- Testimonial Section  ----------------------------------------------------------------------------------*/
 #testimonial-title{
   font-size: 8vw;
 }
@@ -120,6 +281,52 @@ body{
     display: flex;
 }
 
+ /* Medium devices (tablets, 768px and up) ****/
+ @media (min-width: 768px) {
+
+  #testimonial-title{
+    font-size: 3.5vw;
+  }
+
+  .image-wrapper{
+    height: 8vw;
+  }
+
+  .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.3333%);
+    }
+    
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.3333%);
+  }
+
+
+  .card{
+    width: 100%;
+    height: 100%;
+    
+  }
+}
+
+ /* Large devices (desktops, 992px and up) ****/
+ @media (min-width: 992px) {
+
+  .image-wrapper{
+    height: 6vw;
+  }
+
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+/*----------- //Testimonial Section  ----------------------------------------------------------------------------------*/
+
+/*----------- Footer Section  -----------------------------------------------------------------------------------------*/
 footer>div{
   padding: 50px 20px;
 }
@@ -141,222 +348,32 @@ footer a{
   display: inline-block;
 }
 
-
- /* Medium devices (tablets, 768px and up) *****************************************************/
+/* Medium devices (tablets, 768px and up) ****/
 @media (min-width: 768px) {
-
-  #feature-div{
-    background: linear-gradient(#1D4AA6 89%, white 89%);
-    padding-top: 50px;
-  }
-
-  #feature-left{
-    margin: 40px 0px 0px 0px;
-  }
-
-  #shopping-img{
-    width: 7vw;
-  }
-  
-  #feature-img{
-    width: 50vw;
-  }
-
-  #feature-h1{
-    font-size: 3.5vw;
-  }
-  #feature-h3{
-    font-size: 1.5vw;
-  }
-  #feature-badge{
-    font-size: 2vw;
-  }
-  #feature-button{
-    font-size: 1.5vw;
-  }
-
-
-  .space-inc{
-    letter-spacing: 2px;
-  }
-
-  .app-benefit h1{
-    font-size: 4vw;
-  }
-  .app-benefit img{
-    width: 32vw;
-  }
-  
-  .app-benefit h2{
-
-    font-size: 2vw;
-  }
-  .app-benefit p{
-    font-size: 1.6vw;
-  }
-
-  .shopping-steps img{
-    width:26vw;
-  }
-
-  .shopping-steps h3{
-    font-size: 2vw;
-  }
-
-  #testimonial-title{
-    font-size: 3.5vw;
-  }
-
-  @media (max-width: 767px) {
-    .text-secondary{
-      font-size: 1.8vw;
-    }
-  }
-  .image-wrapper{
-    height: 8vw;
-  }
-
-  .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(33.3333%);
-    }
-    
-  .carousel-inner .carousel-item-start.active, 
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-33.3333%);
-  }
 
   .flex-column{
     height: 250px;
   }
 
-  .card{
-    width: 100%;
-    height: 100%;
-    
-  }
 }
 
 
- /* Large devices (desktops, 992px and up) ********************************************************/
- @media (min-width: 992px) {
-
-  #feature-div{
-    background: linear-gradient(#1D4AA6 89%, white 89%);
-    padding-top: 80px;
-  }
-
-  #feature-left{
-    margin: 60px 0px 0px 0px;
-  }
-
-  #shopping-img{
-    width: 6vw;
-  }
-
-  .app-benefit h1{
-    font-size: 3.5vw;
-  }
-  .app-benefit img{
-    width: 24vw;
-  }
-  
-  .app-benefit h2{
-
-    font-size: 1.8vw;
-  }
-  .app-benefit p{
-    font-size: 1.4vw;
-  }
-
-  .shopping-steps img{
-    width:24vw;
-  }
-
-  .shopping-steps h3{
-    font-size: 1.6vw;
-  }
-
-  .image-wrapper{
-    height: 6vw;
-  }
-
-  .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(33.3333%);
-    }
-    
-  .carousel-inner .carousel-item-start.active, 
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-33.3333%);
-  }
+/* Large devices (desktops, 992px and up) ****/
+@media (min-width: 992px) {
 
   .flex-column{
     height: 300px;
   }
 
-  .card{
-    width: 100%;
-    height: 100%;
-    
-  }
 }
 
- /* Extra large devices (large desktops, 1200px and up) *****************************************/
- @media (min-width: 1200px) {
+/*----------- //Footer Section  -----------------------------------------------------------------------------------------*/
 
-  #feature-div{
-    background: linear-gradient(#1D4AA6 89%, white 89%);
-    padding-top: 90px;
-  }
 
-  #feature-left{
-    margin: 70px 0px 0px 0px;
-  }
 
-  #shopping-img{
-    width: 4vw;
-  }
 
-  .app-benefit h2{
-    font-size: 1.2vw;
-  }
-  .app-benefit p{
-    font-size: 0.8vw;
-  }
-  .app-benefit img{
-    width: 19vw;
-  }
-  .shopping-steps img{
-    width:26vw;
-  }
 
-  .image-wrapper{
-    height: 6vw;
-  }
 
-  .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(33.3333%);
-    }
-    
-  .carousel-inner .carousel-item-start.active, 
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-33.3333%);
-  }
 
-  .flex-column{
-    height: 300px;
-  }
 
-  .card{
-    width: 100%;
-    height: 100%;
-    
-  }
-}
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
